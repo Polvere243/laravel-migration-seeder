@@ -1,7 +1,7 @@
 Esercizio di oggi: Laravel Migration Seeder Factory
 nome repo: laravel-migration-seeder
 Iniziamo un nuovo progetto laravel (ricordate di controllare che non vi installi la versione 11)
-Creiamo una tabella trainstramite una migration
+Creiamo una tabella trains tramite una migration
 Ogni treno dovrà avere:
 Azienda
 Stazione di partenza
