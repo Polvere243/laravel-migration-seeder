@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\TrainController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TrainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/trains', [TrainController::class, 'index'])->name('trains.index');
+Route::get('/', TrainController::class)->name('trains.index');

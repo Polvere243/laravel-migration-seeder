@@ -1,17 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Train;
 use Illuminate\Http\Request;
+use App\Models\Train;
 
-class HomeController extends Controller
+class TrainController extends Controller
 {
-    //azione principale
-    public function index()
-    {
-
+   public function __invoke()
+   {
         $trains = Train::all();
-        
+
         return view('trains.index', compact('trains'));
-    }
+   }
 }
