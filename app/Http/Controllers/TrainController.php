@@ -9,8 +9,9 @@ class HomeController extends Controller
     //azione principale
     public function index()
     {
+
         $trains = Train::all();
-        @dd($trains);
-        return view('train.index', compact('trains'));
+        
+        return view('trains.index', compact('trains'));
     }
 }
