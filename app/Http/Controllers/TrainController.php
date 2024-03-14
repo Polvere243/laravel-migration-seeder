@@ -9,7 +9,7 @@ class TrainController extends Controller
    public function __invoke()
    {
         $trains = Train::all();
-
+        
         return view('trains.index', compact('trains'));
    }
 }
