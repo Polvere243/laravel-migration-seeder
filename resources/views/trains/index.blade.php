@@ -39,7 +39,7 @@
                     <h3>Cancellato</h3>
                 </th>
             </tr>
-            @forelse($trains as $key => $train)
+            @forelse($trains as $train)
             <tr>
                 <td>
                     <p>{{$train['azienda']}}</p>
@@ -63,10 +63,10 @@
                     <p>{{$train['numero_carrozze']}}</p>
                 </td>
                 <td>
-                    <p>{{  $train['in_orario']  }}</p>
+                    <p>{{ $train['in_orario'] ? 'SÌ' : 'NO'  }}</p>
                 </td>
                 <td>
-                    <p>{{$train['cancellato']}}</p>
+                    <p>{{$train['cancellato'] ? 'SÌ' : 'NO'}}</p>
                 </td>
                 @empty
                 <h2>Non ci sono treni</h2>
